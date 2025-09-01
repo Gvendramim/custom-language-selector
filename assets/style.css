@@ -1,0 +1,80 @@
+.cls-lang-selector {
+  position: relative;
+  display: inline-block;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.cls-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  transition: box-shadow .2s ease, border-color .2s ease;
+}
+
+.cls-toggle:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 112, 243, .3);
+  border-color: #0070f3;
+}
+
+.cls-icon { 
+  opacity: .9; 
+}
+
+.cls-current {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+}
+
+.cls-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  min-width: 200px;
+  padding: 6px;
+  margin: 0;
+  list-style: none;
+  box-shadow: 0 12px 24px rgba(0,0,0,.08);
+  z-index: 9999;
+}
+
+.cls-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #1f2937;
+  font-size: 14px;
+}
+
+.cls-item:hover,
+.cls-item:focus {
+  background: #f5f7fb;
+  outline: none;
+}
+
+.cls-item.is-current {
+  font-weight: 700;
+}
+
+.cls-flag {
+  width: 20px;
+  height: auto;
+  border-radius: 2px;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
