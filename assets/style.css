@@ -13,9 +13,10 @@
   border-radius: 10px;
   padding: 8px 12px;
   font-size: 14px;
-  line-height: 1;
+  line-height: 1.2;
   cursor: pointer;
   transition: box-shadow .2s ease, border-color .2s ease;
+  white-space: nowrap;
 }
 
 .cls-toggle:focus {
@@ -24,8 +25,8 @@
   border-color: #0070f3;
 }
 
-.cls-icon { 
-  opacity: .9; 
+.cls-icon {
+  opacity: .9;
 }
 
 .cls-current {
@@ -33,6 +34,7 @@
   align-items: center;
   gap: 6px;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 .cls-menu {
@@ -46,7 +48,7 @@
   padding: 6px;
   margin: 0;
   list-style: none;
-  box-shadow: 0 12px 24px rgba(0,0,0,.08);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, .08);
   z-index: 9999;
 }
 
@@ -59,6 +61,8 @@
   text-decoration: none;
   color: #1f2937;
   font-size: 14px;
+  line-height: 1.4;
+  white-space: nowrap;
 }
 
 .cls-item:hover,
@@ -72,6 +76,7 @@
 }
 
 .cls-flag {
+  display: inline-block;
   width: 20px;
   height: auto;
   border-radius: 2px;
