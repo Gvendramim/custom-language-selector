@@ -83,3 +83,16 @@
   flex-shrink: 0;
   vertical-align: middle;
 }
+
+@keyframes borderPulse {
+  0%   { box-shadow: 0 0 0 0 rgba(0,112,243,0.8); border-color: #0070f3; }
+  50%  { box-shadow: 0 0 0 6px rgba(0,112,243,0); border-color: #3399ff; }
+  100% { box-shadow: 0 0 0 0 rgba(0,112,243,0); border-color: #0070f3; }
+}
+
+.cls-toggle.pulse {
+  animation: borderPulse 1.5s ease-out 3; 
+  border: 2px solid #0070f3 !important;
+}
+
+

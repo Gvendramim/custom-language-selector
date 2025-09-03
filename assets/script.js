@@ -56,6 +56,18 @@
         if (items[items.length - 1]) items[items.length - 1].focus();
       }
     });
+
+    var trocarBtn = Array.from(document.querySelectorAll("button, a"))
+      .find(el => el.textContent.trim().toLowerCase().includes("trocar idioma"));
+
+    if (trocarBtn) {
+      trocarBtn.addEventListener("click", function () {
+        if (window.innerWidth <= 768) {
+          button.classList.add("pulse");
+          setTimeout(() => button.classList.remove("pulse"), 4000);
+        }
+      });
+    }
   }
 
   document.addEventListener('DOMContentLoaded', function () {
